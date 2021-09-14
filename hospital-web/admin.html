@@ -255,15 +255,15 @@ input {
 	Id:
 	<input type="text" id = "id1"> <br/>
 	Name:  
-        <input type="text" id = "name"> <br/>
+        <input type="text" id = "name1"> <br/>
     Age:   
-        <input type ="text" id = "age">  <br/>
+        <input type ="text" id = "age1">  <br/>
 	Sex:  
-        <input type="text" id = "sex"> <br/>
+        <input type="text" id = "sex1"> <br/>
     Blood group:   
-        <input type ="text" id = "bloodg">  <br/>
+        <input type ="text" id = "bloodg1">  <br/>
 	Disease:  
-        <input type="text" id = "disease"> <br/>
+        <input type="text" id = "disease1"> <br/>
 	</div>
     <input type ="submit" value = "Update" onclick="update()" ><br/><br/>
 </div>
@@ -420,11 +420,11 @@ async function add(){
 
  async function update(){
 		var id = document.getElementById("edit").value;	
-		var name = document.getElementById("name").value;
-        var age= document.getElementById("age").value;
-		var sex = document.getElementById("sex").value;
-        var bloodg= document.getElementById("bloodg").value;
-		var disease = document.getElementById("disease").value;
+		var name = document.getElementById("name1").value;
+        var age= document.getElementById("age1").value;
+		var sex = document.getElementById("sex1").value;
+        var bloodg= document.getElementById("bloodg1").value;
+		var disease = document.getElementById("disease1").value;
             const apiUrl = 'http://localhost:8000/api/patient'
             const data = {name:name,age: age, sex: sex, bloodg: bloodg, disease: disease}
 			const params = {
